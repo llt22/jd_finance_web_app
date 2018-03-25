@@ -1,30 +1,23 @@
 <template lang="html">
-    <div :class="$style.home">
-        <h1>Home</h1>
-        <input type="button" value="点击我" :class="$style.btn">
-        <div :class="$style.panel">
-            <h4>我是标题</h4>
-        </div>
+    <div>
+        <Heador></Heador>
     </div>
 </template>
 
 <script>
-    export default {}
+    import Heador from '../public/header'
+
+    export default {
+        components: {
+            Heador
+        }
+    }
 </script>
 
-<style lang="scss" module>
-    @import '../../css/reset.scss';
-    @import '../../css/element.scss';
-
-    .home {
-        color: red;
-        font-size: 80px;
-    }
+<style lang="scss">
+    @import '../../css/element';
 
     .btn {
-        @include btn()
-    }
-    .panel {
-        @include panel()
+        background-color: #fff;
     }
 </style>

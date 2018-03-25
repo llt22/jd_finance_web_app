@@ -8,7 +8,7 @@
     export default {
         data() {
             return {
-                btnClass: 'btn'
+                btnClass: this.$style.btn
             }
         },
         props: {
@@ -21,7 +21,7 @@
 </script>
 
 <style lang="scss" module>
-    @import '../../css/element.scss';
+    @import '../../css/element';
 
     .btn {
         @include btn()

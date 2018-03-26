@@ -52,5 +52,6 @@
     }
 </script>
 
-<style lang="scss" module>
+<style lang="css">
+    @import "~swiper/dist/css/swiper.css";
 </style>

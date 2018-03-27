@@ -1,6 +1,6 @@
 <template lang="html">
-    <section :class="[panelClass, cname]">
-        <h4>-{{ title }}-</h4>
+    <section :class="panelClass">
+        <h4 v-if="title">-{{ title }}-</h4>
         <slot></slot>
     </section>
 </template>
@@ -9,7 +9,7 @@
     export default {
         data() {
             return {
-                panelClass: 'btn'
+                panelClass: this.$style.panel
             }
         },
         props: {
@@ -28,7 +28,7 @@
 <style lang="scss" module>
     @import '../../css/element.scss';
 
-    .btn {
+    .panel {
         @include panel()
     }
 </style>

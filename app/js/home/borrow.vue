@@ -37,7 +37,7 @@
             padding-top: 40px;
             padding-bottom: 40px;
             img {
-                width: 90%;
+                width: 95%;
             }
         }
     }

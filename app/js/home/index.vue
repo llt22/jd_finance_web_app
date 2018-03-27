@@ -4,6 +4,7 @@
         <HSlider></HSlider>
         <Novice></Novice>
         <Borrow></Borrow>
+        <Money></Money>
     </div>
 </template>
 
@@ -12,13 +13,15 @@
     import HSlider from './hslider'
     import Novice from './novice'
     import Borrow from './borrow'
+    import Money from './money'
 
     export default {
         components: {
             Heador,
             HSlider,
             Novice,
-            Borrow
+            Borrow,
+            Money
         }
     }
 </script>

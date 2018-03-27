@@ -1,7 +1,7 @@
 <template lang="html">
     <section :class="[cname]">
         <swiper :options="options" :not-next-tick="options.notNextTick">
-            <swiper-slide v-for="item in items" :key="item.targetURL">
+            <swiper-slide v-for="item in items" :key="item.imgUrl">
                 <router-link :to="{name: items.targetURL}">
                     <img :src="item.imgURL" alt="">
                 </router-link>

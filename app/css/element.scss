@@ -22,6 +22,8 @@
   margin: $margin;
   >h4 {
     height: $height;
+    text-align: center;
+    font-weight: 700;
     line-height: $height;
     // 当文本长处后变成...
     text-overflow: ellipsis;

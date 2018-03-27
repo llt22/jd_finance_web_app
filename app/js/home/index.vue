@@ -2,25 +2,23 @@
     <div>
         <Heador></Heador>
         <HSlider></HSlider>
+        <Novice></Novice>
     </div>
 </template>
 
 <script>
     import Heador from '../public/header'
     import HSlider from './hslider'
+    import Novice from './novice'
 
     export default {
         components: {
             Heador,
-            HSlider
+            HSlider,
+            Novice
         }
     }
 </script>
 
 <style lang="scss">
-    @import '../../css/element';
-
-    .btn {
-        background-color: #fff;
-    }
 </style>
